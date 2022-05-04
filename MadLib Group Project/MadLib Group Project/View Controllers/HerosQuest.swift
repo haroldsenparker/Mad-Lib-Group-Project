@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JessicaViewController2: UIViewController {
+class HerosQuest: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

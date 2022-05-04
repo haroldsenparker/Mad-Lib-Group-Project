@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JessicaViewController1: UIViewController {
+class Dream: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
