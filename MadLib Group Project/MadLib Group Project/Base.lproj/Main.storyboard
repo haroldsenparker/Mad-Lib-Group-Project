@@ -54,7 +54,6 @@
         <!--Custom Mad Lib-->
         <scene sceneID="moW-FJ-JZP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YBh-RU-cVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="CWr-k6-gZk" userLabel="Custom Mad Lib" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aH8-dL-afU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -75,13 +74,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="zOa-Du-cdB"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBh-RU-cVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1972" y="774"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ghr-wb-lsv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fgj-br-drl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="TwT-eL-Exk" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="T5a-uH-hCz"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="45A-9g-ugn">
@@ -96,15 +95,15 @@
                         <segue destination="T0i-jP-OQF" kind="relationship" relationship="viewControllers" id="0xh-ZY-gnl"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgj-br-drl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-465" y="45"/>
         </scene>
-        <!--Item-->
+        <!--Dream-->
         <scene sceneID="KMl-nv-2bg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="en0-T9-kg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="EVv-1Z-SVb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="xSp-kf-yE0"/>
+                    <tabBarItem key="tabBarItem" title="Dream" image="cloud.fill" catalog="system" id="xSp-kf-yE0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GeU-uB-d8E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -113,33 +112,33 @@
                         <segue destination="wVz-G2-wMd" kind="relationship" relationship="rootViewController" id="oeY-Vq-RSk"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="en0-T9-kg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="303" y="-715"/>
         </scene>
-        <!--Jessica View Controller1-->
+        <!--Dream-->
         <scene sceneID="ryi-HR-TId">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MiY-lg-Smo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="wVz-G2-wMd" customClass="JessicaViewController1" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wVz-G2-wMd" customClass="Dream" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NQh-RU-dBZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="yNs-2u-PEK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.92322018878820522" green="0.5659626247201428" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="rtZ-eR-IgW">
                         <barButtonItem key="leftBarButtonItem" title="BACK" id="Ket-b6-lw9"/>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MiY-lg-Smo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1564" y="-715"/>
         </scene>
-        <!--Item-->
+        <!--Heros Quest-->
         <scene sceneID="2JX-kZ-XD1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YFX-PW-6vy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Lqi-28-bxM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9tP-aX-Avr"/>
+                    <tabBarItem key="tabBarItem" title="Heros Quest" image="shield.fill" catalog="system" id="9tP-aX-Avr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4w-ei-zaE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -148,13 +147,13 @@
                         <segue destination="BNP-MN-wb4" kind="relationship" relationship="rootViewController" id="8da-uP-Gld"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFX-PW-6vy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="303" y="-49"/>
         </scene>
         <!--To Goosebumps-->
         <scene sceneID="PjA-dc-nH3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oiY-Yb-biz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="8Fj-Ho-4rg" userLabel="To Goosebumps" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Goosebumps" image="text.book.closed.fill" catalog="system" id="S5P-Ol-II6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="geo-L4-TtI">
@@ -165,13 +164,13 @@
                         <segue destination="97b-Re-Zzy" kind="relationship" relationship="rootViewController" id="QPg-hf-MRA"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiY-Yb-biz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="303" y="634"/>
         </scene>
         <!--To 80s Movies-->
         <scene sceneID="ZKM-ML-YWh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7GF-v1-Z3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="T0i-jP-OQF" userLabel="To 80s Movies" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="80s Movies" image="film" catalog="system" id="Kq7-Mc-C41"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jz1-4K-c9e">
@@ -182,31 +181,31 @@
                         <segue destination="f0e-Rd-I39" kind="relationship" relationship="rootViewController" id="2oc-fT-XUi"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7GF-v1-Z3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="303" y="1354"/>
         </scene>
-        <!--Jessica View Controller2-->
+        <!--Heros Quest-->
         <scene sceneID="jaD-r4-lhh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2xO-hr-7ir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="BNP-MN-wb4" customClass="JessicaViewController2" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BNP-MN-wb4" customClass="HerosQuest" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oqv-6r-BE2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6R2-b1-Lqp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Xj-Av-rjL">
                         <barButtonItem key="leftBarButtonItem" title="BACK" id="lGB-Fa-lwN"/>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xO-hr-7ir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1564" y="-50"/>
         </scene>
         <!--Goosebumps View Controller-->
         <scene sceneID="ay5-J7-zW3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="146-mR-Jx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="97b-Re-Zzy" customClass="GoosebumpsViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xPh-6e-QSj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -350,13 +349,13 @@
                         <barButtonItem key="leftBarButtonItem" title="BACK" id="GbZ-mR-FlF"/>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="146-mR-Jx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1563.768115942029" y="632.8125"/>
         </scene>
         <!--0s Movie View Controller-->
         <scene sceneID="9cU-nR-7cE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c57-NL-XAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="f0e-Rd-I39" customClass="_0sMovieViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tb6-xJ-Nvb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -500,15 +499,21 @@
                         <barButtonItem key="leftBarButtonItem" title="BACK" id="GGn-bK-x0a"/>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c57-NL-XAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1563.768115942029" y="1352.6785714285713"/>
         </scene>
     </scenes>
     <resources>
+        <image name="cloud.fill" catalog="system" width="128" height="88"/>
         <image name="film" catalog="system" width="128" height="93"/>
+        <image name="shield.fill" catalog="system" width="128" height="121"/>
         <image name="text.book.closed.fill" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

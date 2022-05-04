@@ -14,8 +14,8 @@
 		FAC70E8C2821680600E44253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC70E8A2821680600E44253 /* LaunchScreen.storyboard */; };
 		FAC70E94282178A200E44253 /* GoosebumpsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E93282178A200E44253 /* GoosebumpsViewController.swift */; };
 		FAC70E97282178DF00E44253 /* 80sMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E96282178DF00E44253 /* 80sMovieViewController.swift */; };
-		FAC70E992821791B00E44253 /* JessicaViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E982821791B00E44253 /* JessicaViewController1.swift */; };
-		FAC70E9B2821792500E44253 /* JessicaViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E9A2821792500E44253 /* JessicaViewController2.swift */; };
+		FAC70E992821791B00E44253 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E982821791B00E44253 /* Dream.swift */; };
+		FAC70E9B2821792500E44253 /* HerosQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E9A2821792500E44253 /* HerosQuest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		FAC70E8D2821680600E44253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC70E93282178A200E44253 /* GoosebumpsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoosebumpsViewController.swift; sourceTree = "<group>"; };
 		FAC70E96282178DF00E44253 /* 80sMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 80sMovieViewController.swift; sourceTree = "<group>"; };
-		FAC70E982821791B00E44253 /* JessicaViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JessicaViewController1.swift; sourceTree = "<group>"; };
-		FAC70E9A2821792500E44253 /* JessicaViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JessicaViewController2.swift; sourceTree = "<group>"; };
+		FAC70E982821791B00E44253 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
+		FAC70E9A2821792500E44253 /* HerosQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosQuest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 			children = (
 				FAC70E93282178A200E44253 /* GoosebumpsViewController.swift */,
 				FAC70E96282178DF00E44253 /* 80sMovieViewController.swift */,
-				FAC70E982821791B00E44253 /* JessicaViewController1.swift */,
-				FAC70E9A2821792500E44253 /* JessicaViewController2.swift */,
+				FAC70E982821791B00E44253 /* Dream.swift */,
+				FAC70E9A2821792500E44253 /* HerosQuest.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC70E9B2821792500E44253 /* JessicaViewController2.swift in Sources */,
+				FAC70E9B2821792500E44253 /* HerosQuest.swift in Sources */,
 				FAC70E94282178A200E44253 /* GoosebumpsViewController.swift in Sources */,
 				FAC70E97282178DF00E44253 /* 80sMovieViewController.swift in Sources */,
 				FAC70E802821680500E44253 /* AppDelegate.swift in Sources */,
 				FAC70E822821680500E44253 /* SceneDelegate.swift in Sources */,
-				FAC70E992821791B00E44253 /* JessicaViewController1.swift in Sources */,
+				FAC70E992821791B00E44253 /* Dream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
