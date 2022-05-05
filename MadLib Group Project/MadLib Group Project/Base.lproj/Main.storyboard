@@ -16,35 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-6b-t8z">
-                                <rect key="frame" x="135" y="334" width="144" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-6b-t8z">
+                                <rect key="frame" x="140.5" y="370.5" width="133.5" height="85.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="SELECT A TOPIC" titleAlignment="center"/>
                                 <connections>
                                     <segue destination="TwT-eL-Exk" kind="show" id="hgv-dE-3eb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL8-we-AUy">
-                                <rect key="frame" x="135" y="474" width="144" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL8-we-AUy">
+                                <rect key="frame" x="135.5" y="535" width="143" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="beb-Ys-ibY"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="CUSTOM MAD LIB" titleAlignment="center"/>
                                 <connections>
                                     <segue destination="CWr-k6-gZk" kind="show" id="Q18-2c-Ah4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAD LIBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCX-oi-ayC">
-                                <rect key="frame" x="85" y="146" width="244" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAD LIBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCX-oi-ayC">
+                                <rect key="frame" x="85" y="217" width="245" height="64"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TXY-hf-fMf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TXY-hf-fMf" firstAttribute="bottom" secondItem="xL8-we-AUy" secondAttribute="bottom" constant="243" id="8vB-ke-tks"/>
+                            <constraint firstItem="SCX-oi-ayC" firstAttribute="centerX" secondItem="xL8-we-AUy" secondAttribute="centerX" constant="0.5" id="EpC-Uw-v5i"/>
+                            <constraint firstItem="x8e-6b-t8z" firstAttribute="top" secondItem="SCX-oi-ayC" secondAttribute="bottom" constant="89.5" id="X2F-wA-OUt"/>
+                            <constraint firstItem="xL8-we-AUy" firstAttribute="top" secondItem="x8e-6b-t8z" secondAttribute="bottom" constant="79" id="X7p-Fr-x3l"/>
+                            <constraint firstItem="SCX-oi-ayC" firstAttribute="top" secondItem="TXY-hf-fMf" secondAttribute="top" constant="173" id="Ztb-YH-2Nk"/>
+                            <constraint firstItem="SCX-oi-ayC" firstAttribute="centerX" secondItem="x8e-6b-t8z" secondAttribute="centerX" constant="0.25" id="exW-SV-00S"/>
+                            <constraint firstItem="SCX-oi-ayC" firstAttribute="centerX" secondItem="kFt-IW-FM4" secondAttribute="centerX" constant="0.5" id="jS7-vm-Edg"/>
+                            <constraint firstItem="xL8-we-AUy" firstAttribute="leading" secondItem="TXY-hf-fMf" secondAttribute="leading" constant="135.5" id="xoY-6y-1Fu"/>
+                            <constraint firstItem="SCX-oi-ayC" firstAttribute="leading" secondItem="TXY-hf-fMf" secondAttribute="leading" constant="85" id="yZP-C0-Ggk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPo-bw-3qC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
