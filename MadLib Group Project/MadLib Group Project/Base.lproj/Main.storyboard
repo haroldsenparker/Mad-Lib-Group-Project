@@ -648,7 +648,13 @@
                         <barButtonItem key="leftBarButtonItem" title="BACK" id="GbZ-mR-FlF"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="adj1" destination="UdV-88-SJQ" id="0xH-W0-CRR"/>
+                        <outlet property="adj2" destination="h96-av-dqL" id="BoQ-0S-K9h"/>
+                        <outlet property="adj3" destination="pPf-Nh-CfJ" id="xvy-8X-nzh"/>
                         <outlet property="lblEnter" destination="Bp5-IP-7dt" id="OVQ-KK-mr5"/>
+                        <outlet property="name1" destination="wDp-VQ-kqv" id="NzW-ch-lzN"/>
+                        <outlet property="name2" destination="6jS-O9-AMh" id="BEJ-Ya-wXc"/>
+                        <outlet property="place" destination="Xel-6L-fSI" id="DOy-Ea-3sv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="146-mR-Jx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

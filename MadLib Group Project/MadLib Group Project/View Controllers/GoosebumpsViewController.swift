@@ -9,11 +9,12 @@ import UIKit
 
 class GoosebumpsViewController: UIViewController {
 
-    
-    
-    
-    
-    
+    @IBOutlet var name1: UITextField!
+    @IBOutlet var name2: UITextField!
+    @IBOutlet var place: UITextField!
+    @IBOutlet var adj1: UITextField!
+    @IBOutlet var adj2: UITextField!
+    @IBOutlet var adj3: UITextField!
     
     @IBOutlet var lblEnter: UILabel!
     
