@@ -9,20 +9,21 @@ import UIKit
 
 class GoosebumpsViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    
+    
+    
+    
+    
+    
+    @IBOutlet var lblEnter: UILabel!
+    
+    @IBAction func btnEnter(_ sender: Any) {
+        let stories: NSArray = ["chigga", "boy", "freddie"]
+        let numbers: UInt32 = UInt32(stories.count)
+        let randomNumber = Int(arc4random_uniform(numbers))
+            let storyString = stories.object(at: randomNumber)
+            self.lblEnter.text = storyString as? String
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
