@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99039220282E9CB700CAC085 /* HauntedHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903921F282E9CB700CAC085 /* HauntedHouseViewController.swift */; };
 		FAC70E802821680500E44253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E7F2821680500E44253 /* AppDelegate.swift */; };
 		FAC70E822821680500E44253 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E812821680500E44253 /* SceneDelegate.swift */; };
 		FAC70E872821680500E44253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC70E852821680500E44253 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9903921F282E9CB700CAC085 /* HauntedHouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HauntedHouseViewController.swift; sourceTree = "<group>"; };
 		FAC70E7C2821680500E44253 /* MadLib Group Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MadLib Group Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC70E7F2821680500E44253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC70E812821680500E44253 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				FAC70E96282178DF00E44253 /* 80sMovieViewController.swift */,
 				FAC70E982821791B00E44253 /* Dream.swift */,
 				FAC70E9A2821792500E44253 /* HerosQuest.swift */,
+				9903921F282E9CB700CAC085 /* HauntedHouseViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC70E9B2821792500E44253 /* HerosQuest.swift in Sources */,
+				99039220282E9CB700CAC085 /* HauntedHouseViewController.swift in Sources */,
 				FAC70E94282178A200E44253 /* GoosebumpsViewController.swift in Sources */,
 				FAC70E97282178DF00E44253 /* 80sMovieViewController.swift in Sources */,
 				FAC70E802821680500E44253 /* AppDelegate.swift in Sources */,

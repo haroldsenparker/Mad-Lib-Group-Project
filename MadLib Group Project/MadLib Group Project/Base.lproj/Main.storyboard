@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="dc2-00-QPJ" userLabel="Main Scene" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kFt-IW-FM4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-6b-t8z">
@@ -22,7 +22,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="RANDOM" titleAlignment="center"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL8-we-AUy">
-                                <rect key="frame" x="135.5" y="535" width="143" height="84"/>
+                                <rect key="frame" x="135.5" y="515" width="143" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="j8b-jA-4dr"/>
                                 </constraints>
@@ -54,6 +54,7 @@
                             <constraint firstItem="SCX-oi-ayC" firstAttribute="top" secondItem="TXY-hf-fMf" secondAttribute="top" constant="173" id="wkL-0O-rG3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="32I-nt-kV6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPo-bw-3qC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +73,7 @@
         <!--Haunted House-->
         <scene sceneID="f9b-F9-ROS">
             <objects>
-                <viewController title="Haunted House" id="KOS-0P-Cdz" sceneMemberID="viewController">
+                <viewController title="Haunted House" id="KOS-0P-Cdz" customClass="HauntedHouseViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w5P-re-HM7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +169,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Part" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSB-Qh-wD4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSB-Qh-wD4">
                                         <rect key="frame" x="0.0" y="605.5" width="334" height="34.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -205,6 +206,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="adjetive1" destination="M4V-CN-KuC" id="3DB-ej-VHq"/>
+                        <outlet property="adjetive2" destination="jwO-Yi-zWH" id="2SM-zT-VDh"/>
+                        <outlet property="adjetive3" destination="NlU-BW-nla" id="Q6o-cR-yBi"/>
+                        <outlet property="bodyPart1" destination="aEs-Qw-08G" id="g3l-Dx-Yho"/>
+                        <outlet property="bodyPart2" destination="gk3-EU-DEK" id="GQX-pQ-upm"/>
+                        <outlet property="name1" destination="eft-Vm-Ra1" id="7v2-N0-aFf"/>
+                        <outlet property="name2" destination="ORh-xt-Dip" id="2X4-rb-Ipz"/>
+                        <outlet property="noun1" destination="x3o-ON-kb8" id="ePc-Ya-Q9i"/>
+                        <outlet property="verb1" destination="2CH-vz-fNE" id="qjo-s0-BVE"/>
                         <segue destination="mLl-UG-pGm" kind="show" id="u9v-Lv-f6w"/>
                     </connections>
                 </viewController>
@@ -220,7 +230,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laF-ho-EUY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laF-ho-EUY">
                                 <rect key="frame" x="20" y="64" width="374" height="598"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -239,6 +249,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Home">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dc2-00-QPJ" kind="show" id="2m1-jn-6VH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="52I-oh-t9X"/>
@@ -398,6 +411,15 @@
                         <barButtonItem key="leftBarButtonItem" title="BACK" id="Ket-b6-lw9"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="adjetive1" destination="EkP-eX-znG" id="aKA-PX-RhH"/>
+                        <outlet property="adjetive2" destination="3lc-IB-XJ6" id="FNC-Vo-gRm"/>
+                        <outlet property="animal1" destination="9us-BG-OS0" id="aFJ-1f-PI8"/>
+                        <outlet property="name1" destination="xLC-rn-Dct" id="j4a-BM-Gbr"/>
+                        <outlet property="name2" destination="JzL-lL-LxH" id="LAk-aQ-ifj"/>
+                        <outlet property="noun1" destination="DiI-kt-bfu" id="2oQ-8o-Lf1"/>
+                        <outlet property="noun2" destination="M41-Ck-tsj" id="FyG-hN-vBU"/>
+                        <outlet property="noun3" destination="MYL-RM-WFD" id="fSW-zS-O3k"/>
+                        <outlet property="verb1" destination="hXx-jL-QOn" id="Z1u-Sw-Jjq"/>
                         <segue destination="Fo7-ec-VX6" kind="show" id="Vzf-Mm-7dF"/>
                     </connections>
                 </viewController>
@@ -413,7 +435,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8I-hC-wRC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8I-hC-wRC">
                                 <rect key="frame" x="20" y="64" width="374" height="598"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -428,6 +450,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Home">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dc2-00-QPJ" kind="show" id="gYT-tN-xHR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NHg-QA-6Ml"/>
@@ -626,6 +651,15 @@
                         <barButtonItem key="leftBarButtonItem" title="BACK" id="lGB-Fa-lwN"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="adjetive1" destination="G29-Wr-NZX" id="szd-7y-P9h"/>
+                        <outlet property="adjetive2" destination="20B-3B-LAf" id="43A-Mn-iKj"/>
+                        <outlet property="adjetive3" destination="Rg8-iI-q1H" id="e2m-pt-ceC"/>
+                        <outlet property="name1" destination="Bgf-K8-Lvk" id="e85-Rv-mNB"/>
+                        <outlet property="name2" destination="eUJ-EV-xnR" id="vcB-rh-v3d"/>
+                        <outlet property="noun1" destination="YoY-NT-2NO" id="S8w-w6-JzA"/>
+                        <outlet property="noun2" destination="Mxg-Z9-VAw" id="5Ht-PM-JkH"/>
+                        <outlet property="noun3" destination="ShN-QG-ilc" id="iCm-f5-lQ3"/>
+                        <outlet property="verb1" destination="PIc-r7-Cwc" id="gmQ-Vm-ova"/>
                         <segue destination="bBx-No-12I" kind="show" id="BqN-7j-2mO"/>
                     </connections>
                 </viewController>
@@ -641,7 +675,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzC-xb-Nh8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzC-xb-Nh8">
                                 <rect key="frame" x="20" y="64" width="374" height="598"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -659,6 +693,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Home">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="dc2-00-QPJ" kind="show" id="Ee7-ma-fnt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -1049,6 +1086,9 @@
             <point key="canvasLocation" x="1135" y="1659"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2m1-jn-6VH"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
