@@ -191,6 +191,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Enter">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="enterButtonTapped:" destination="KOS-0P-Cdz" eventType="touchUpInside" id="b1E-SZ-e2L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ztG-Ea-FLl"/>
@@ -225,7 +228,7 @@
         <!--Haunted House Story-->
         <scene sceneID="4WC-vD-ShR">
             <objects>
-                <viewController title="Haunted House Story" id="mLl-UG-pGm" sceneMemberID="viewController">
+                <viewController title="Haunted House Story" id="mLl-UG-pGm" customClass="HauntedHouseViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0gv-D5-unL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,6 +270,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WI6-30-TQV"/>
+                    <connections>
+                        <outlet property="labelEnter" destination="laF-ho-EUY" id="y4v-sB-tcp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTv-Gs-HPh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -393,6 +399,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Enter">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="enterButtonTapped:" destination="wVz-G2-wMd" eventType="touchUpInside" id="abK-ag-FdJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yNs-2u-PEK"/>
@@ -430,7 +439,7 @@
         <!--Dream Story-->
         <scene sceneID="Hy7-5h-wy9">
             <objects>
-                <viewController title="Dream Story" id="Fo7-ec-VX6" sceneMemberID="viewController">
+                <viewController title="Dream Story" id="Fo7-ec-VX6" customClass="Dream" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kak-c2-28t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -468,6 +477,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DQj-qp-T39"/>
+                    <connections>
+                        <outlet property="labelEnter" destination="Y8I-hC-wRC" id="S5p-iR-jq4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGD-K5-qdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -491,6 +503,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Enter">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="enterButtonTapped:" destination="BNP-MN-wb4" eventType="touchUpInside" id="hmS-PF-k7b"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fXn-iO-7cy">
                                 <rect key="frame" x="40" y="64" width="334" height="678"/>
@@ -670,7 +685,7 @@
         <!--Hero Story-->
         <scene sceneID="6EW-TJ-QBh">
             <objects>
-                <viewController title="Hero Story" id="bBx-No-12I" sceneMemberID="viewController">
+                <viewController title="Hero Story" id="bBx-No-12I" customClass="HerosQuest" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mmM-Nl-hRB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -716,6 +731,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GML-5b-yS8"/>
+                    <connections>
+                        <outlet property="labelEnter" destination="pzC-xb-Nh8" id="Caz-jy-GRY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rjy-Fx-oz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1084,7 +1102,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ee7-ma-fnt"/>
+        <segue reference="2m1-jn-6VH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
