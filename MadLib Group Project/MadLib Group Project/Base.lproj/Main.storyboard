@@ -699,9 +699,6 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="AU8-o9-3cB" secondAttribute="trailing" constant="20" id="S7G-kp-S82"/>
-                                    <constraint firstItem="AU8-o9-3cB" firstAttribute="leading" secondItem="mrO-lL-ur4" secondAttribute="leading" constant="20" id="gnx-A6-2Rm"/>
-                                    <constraint firstAttribute="bottom" secondItem="AU8-o9-3cB" secondAttribute="bottom" constant="20" id="mfv-vP-3rH"/>
                                     <constraint firstAttribute="height" constant="50" id="yd8-YA-NAR"/>
                                 </constraints>
                             </stackView>
@@ -1087,7 +1084,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2m1-jn-6VH"/>
+        <segue reference="Ee7-ma-fnt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

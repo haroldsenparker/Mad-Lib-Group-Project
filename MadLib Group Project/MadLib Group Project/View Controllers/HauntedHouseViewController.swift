@@ -19,21 +19,9 @@ class HauntedHouseViewController: UIViewController {
     @IBOutlet weak var bodyPart2: UITextField!
     @IBOutlet weak var name2: UITextField!
     
+    @IBOutlet weak var labelEnter: UILabel!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBAction func enterButtonTapped(_ sender: UIButton) {
+        labelEnter.text = "It was a dark and " + adjetive1.text! + " night. The house across the street had been abandoned for as long as I can remember. I called up " + name1.text! + " and asked if they wanted to help me sneak into the house. “Why do you want to go inside that house?” “Well, because I am " + adjetive2.text! + ".” “Well I’m not. Goodnight.""They hung up. Oh well, guess I will go on my own. I grabbed my trusty " + noun1.text! + "and was on my way. The door to the house was locked so I decided to " + verb1.text! + " the door. “Wow, it actually worked. " +  adjetive3.text! + "!” I entered the house and the door immediately shut behind me. It was too dark and I couldn’t move. I felt a cold " + bodyPart1.text! + " touch my " + bodyPart2.text! + ". I ran out the door and back into my home. I looked out the window into the house to see " + name2.text! + " looking back at me."
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
