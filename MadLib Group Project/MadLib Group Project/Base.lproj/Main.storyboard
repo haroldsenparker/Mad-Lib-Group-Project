@@ -871,10 +871,10 @@
             </objects>
             <point key="canvasLocation" x="1135" y="962"/>
         </scene>
-        <!--0s Movie View Controller-->
+        <!--Eighties Movie View Controller-->
         <scene sceneID="9cU-nR-7cE">
             <objects>
-                <viewController id="f0e-Rd-I39" customClass="_0sMovieViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f0e-Rd-I39" customClass="EightiesMovieViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tb6-xJ-Nvb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
