@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		99039220282E9CB700CAC085 /* HauntedHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903921F282E9CB700CAC085 /* HauntedHouseViewController.swift */; };
-		FABDA716284F9DE400799CFB /* EightiesStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDA715284F9DE400799CFB /* EightiesStoryViewController.swift */; };
+		FA0602D3285A35D10063868D /* DisplayStoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0602D2285A35D10063868D /* DisplayStoryViewController.storyboard */; };
+		FA0602D5285A35E70063868D /* DisplayStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602D4285A35E70063868D /* DisplayStoryViewController.swift */; };
 		FABDA718284F9DFA00799CFB /* GoosebumpsStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDA717284F9DFA00799CFB /* GoosebumpsStoryViewController.swift */; };
 		FABDA71A284F9FA500799CFB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDA719284F9FA500799CFB /* MainViewController.swift */; };
 		FAC70E802821680500E44253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E7F2821680500E44253 /* AppDelegate.swift */; };
@@ -24,7 +25,8 @@
 
 /* Begin PBXFileReference section */
 		9903921F282E9CB700CAC085 /* HauntedHouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HauntedHouseViewController.swift; sourceTree = "<group>"; };
-		FABDA715284F9DE400799CFB /* EightiesStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightiesStoryViewController.swift; sourceTree = "<group>"; };
+		FA0602D2285A35D10063868D /* DisplayStoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DisplayStoryViewController.storyboard; sourceTree = "<group>"; };
+		FA0602D4285A35E70063868D /* DisplayStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStoryViewController.swift; sourceTree = "<group>"; };
 		FABDA717284F9DFA00799CFB /* GoosebumpsStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoosebumpsStoryViewController.swift; sourceTree = "<group>"; };
 		FABDA719284F9FA500799CFB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAC70E7C2821680500E44253 /* MadLib Group Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MadLib Group Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,8 @@
 			children = (
 				FAC70E95282178AF00E44253 /* View Controllers */,
 				FAC70E852821680500E44253 /* Main.storyboard */,
+				FA0602D2285A35D10063868D /* DisplayStoryViewController.storyboard */,
+				FA0602D4285A35E70063868D /* DisplayStoryViewController.swift */,
 				FAC70E882821680600E44253 /* Assets.xcassets */,
 				FAC70E8A2821680600E44253 /* LaunchScreen.storyboard */,
 				FAC70E7F2821680500E44253 /* AppDelegate.swift */,
@@ -86,7 +90,6 @@
 			children = (
 				FAC70E93282178A200E44253 /* GoosebumpsViewController.swift */,
 				FAC70E96282178DF00E44253 /* 80sMovieViewController.swift */,
-				FABDA715284F9DE400799CFB /* EightiesStoryViewController.swift */,
 				FABDA717284F9DFA00799CFB /* GoosebumpsStoryViewController.swift */,
 				FAC70E982821791B00E44253 /* Dream.swift */,
 				FABDA719284F9FA500799CFB /* MainViewController.swift */,
@@ -156,6 +159,7 @@
 			files = (
 				FAC70E8C2821680600E44253 /* LaunchScreen.storyboard in Resources */,
 				FAC70E892821680600E44253 /* Assets.xcassets in Resources */,
+				FA0602D3285A35D10063868D /* DisplayStoryViewController.storyboard in Resources */,
 				FAC70E872821680500E44253 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,11 +174,11 @@
 				FABDA718284F9DFA00799CFB /* GoosebumpsStoryViewController.swift in Sources */,
 				FAC70E9B2821792500E44253 /* HerosQuest.swift in Sources */,
 				99039220282E9CB700CAC085 /* HauntedHouseViewController.swift in Sources */,
-				FABDA716284F9DE400799CFB /* EightiesStoryViewController.swift in Sources */,
 				FAC70E94282178A200E44253 /* GoosebumpsViewController.swift in Sources */,
 				FAC70E97282178DF00E44253 /* 80sMovieViewController.swift in Sources */,
 				FAC70E802821680500E44253 /* AppDelegate.swift in Sources */,
 				FAC70E822821680500E44253 /* SceneDelegate.swift in Sources */,
+				FA0602D5285A35E70063868D /* DisplayStoryViewController.swift in Sources */,
 				FAC70E992821791B00E44253 /* Dream.swift in Sources */,
 				FABDA71A284F9FA500799CFB /* MainViewController.swift in Sources */,
 			);

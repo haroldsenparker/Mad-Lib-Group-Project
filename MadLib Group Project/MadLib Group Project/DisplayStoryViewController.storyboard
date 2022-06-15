@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sNU-PL-cQb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Display Story-->
+        <scene sceneID="I2V-v2-Sey">
+            <objects>
+                <viewController title="Display Story" id="sNU-PL-cQb" customClass="DisplayStoryViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7DM-Zg-zUm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Al-t8-jdu">
+                                <rect key="frame" x="20" y="64" width="374" height="618"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="jiB-2f-X8f">
+                                <rect key="frame" x="20" y="762" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSY-NH-HfR">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Dva-il-6h6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="NEW STORY">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newStoryButtonPressed:" destination="sNU-PL-cQb" eventType="touchUpInside" id="9Vc-s4-3Rd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ez5-E1-CRh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rok-xY-ytk"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="rok-xY-ytk" firstAttribute="bottom" secondItem="jiB-2f-X8f" secondAttribute="bottom" constant="50" id="Yjc-sR-vVa"/>
+                            <constraint firstItem="jiB-2f-X8f" firstAttribute="top" secondItem="5Al-t8-jdu" secondAttribute="bottom" constant="80" id="dLe-fO-mhx"/>
+                            <constraint firstItem="5Al-t8-jdu" firstAttribute="top" secondItem="7DM-Zg-zUm" secondAttribute="topMargin" constant="20" id="eGn-1R-Vtt"/>
+                            <constraint firstItem="rok-xY-ytk" firstAttribute="trailing" secondItem="5Al-t8-jdu" secondAttribute="trailing" constant="20" id="ne0-dr-phI"/>
+                            <constraint firstItem="5Al-t8-jdu" firstAttribute="leading" secondItem="rok-xY-ytk" secondAttribute="leading" constant="20" id="vPv-YE-Mwj"/>
+                            <constraint firstItem="rok-xY-ytk" firstAttribute="trailing" secondItem="jiB-2f-X8f" secondAttribute="trailing" constant="20" id="w0y-FI-Qr4"/>
+                            <constraint firstItem="jiB-2f-X8f" firstAttribute="leading" secondItem="rok-xY-ytk" secondAttribute="leading" constant="20" id="zsf-X3-OsZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4gF-dr-rJR"/>
+                    <connections>
+                        <outlet property="storyLabel" destination="5Al-t8-jdu" id="zwz-MJ-aJb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2m-K0-eRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2044.9275362318842" y="239.73214285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

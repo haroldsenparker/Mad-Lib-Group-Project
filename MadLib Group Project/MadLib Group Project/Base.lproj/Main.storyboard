@@ -61,9 +61,9 @@
                     <connections>
                         <segue destination="wVz-G2-wMd" kind="show" identifier="pushDream" id="bqS-Cw-o1O"/>
                         <segue destination="BNP-MN-wb4" kind="show" identifier="pushHero" id="4gh-q3-QhT"/>
-                        <segue destination="KOS-0P-Cdz" kind="show" identifier="pushHaunted" id="zyS-hn-mGz"/>
                         <segue destination="97b-Re-Zzy" kind="show" identifier="pushGoosebumps" id="hts-db-Hc6"/>
                         <segue destination="f0e-Rd-I39" kind="show" identifier="pushEighties" id="NPR-vC-ZMX"/>
+                        <segue destination="KOS-0P-Cdz" kind="show" identifier="pushHaunted" id="1bi-Dj-UIM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPo-bw-3qC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -83,7 +83,7 @@
         <!--Haunted House-->
         <scene sceneID="f9b-F9-ROS">
             <objects>
-                <viewController title="Haunted House" id="KOS-0P-Cdz" customClass="HauntedHouseViewController" sceneMemberID="viewController">
+                <viewController title="Haunted House" id="KOS-0P-Cdz" customClass="HauntedHouseViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w5P-re-HM7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,9 +218,9 @@
                             <constraint firstItem="ztG-Ea-FLl" firstAttribute="trailing" secondItem="YJ9-uo-wkY" secondAttribute="trailing" constant="20" id="zby-DC-3Oy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="odU-7G-5qc"/>
+                    <navigationItem key="navigationItem" id="8Hb-b8-SKi"/>
                     <connections>
-                        <outlet property="adjetive1" destination="M4V-CN-KuC" id="3DB-ej-VHq"/>
+                        <outlet property="adjective1" destination="M4V-CN-KuC" id="xeS-1G-uWe"/>
                         <outlet property="adjetive2" destination="jwO-Yi-zWH" id="2SM-zT-VDh"/>
                         <outlet property="adjetive3" destination="NlU-BW-nla" id="Q6o-cR-yBi"/>
                         <outlet property="bodyPart1" destination="aEs-Qw-08G" id="g3l-Dx-Yho"/>
@@ -229,62 +229,12 @@
                         <outlet property="name2" destination="ORh-xt-Dip" id="2X4-rb-Ipz"/>
                         <outlet property="noun1" destination="x3o-ON-kb8" id="ePc-Ya-Q9i"/>
                         <outlet property="verb1" destination="2CH-vz-fNE" id="qjo-s0-BVE"/>
-                        <segue destination="mLl-UG-pGm" kind="show" id="u9v-Lv-f6w"/>
+                        <segue destination="ihn-ca-y7Z" kind="show" identifier="displayStory" id="Tta-FJ-L7V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KsE-dh-XWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="897" y="-1151"/>
-        </scene>
-        <!--Haunted House Story-->
-        <scene sceneID="4WC-vD-ShR">
-            <objects>
-                <viewController title="Haunted House Story" id="mLl-UG-pGm" customClass="HauntedHouseViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0gv-D5-unL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laF-ho-EUY">
-                                <rect key="frame" x="20" y="108" width="374" height="574"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="rrw-Ye-uGm">
-                                <rect key="frame" x="40" y="761" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsK-U2-RT0">
-                                <rect key="frame" x="20" y="762" width="374" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="xh3-VW-5HY"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="NEW STORY">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                </buttonConfiguration>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="52I-oh-t9X"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                        <constraints>
-                            <constraint firstItem="52I-oh-t9X" firstAttribute="trailing" secondItem="laF-ho-EUY" secondAttribute="trailing" constant="20" id="6Oj-LN-l4d"/>
-                            <constraint firstItem="52I-oh-t9X" firstAttribute="trailing" secondItem="nsK-U2-RT0" secondAttribute="trailing" constant="20" id="WDQ-ss-zRf"/>
-                            <constraint firstItem="laF-ho-EUY" firstAttribute="leading" secondItem="52I-oh-t9X" secondAttribute="leading" constant="20" id="cko-oI-uMe"/>
-                            <constraint firstItem="laF-ho-EUY" firstAttribute="top" secondItem="52I-oh-t9X" secondAttribute="top" constant="20" id="eJ0-7K-XTo"/>
-                            <constraint firstItem="nsK-U2-RT0" firstAttribute="top" secondItem="laF-ho-EUY" secondAttribute="bottom" constant="80" id="pbp-wp-rSW"/>
-                            <constraint firstItem="52I-oh-t9X" firstAttribute="bottom" secondItem="nsK-U2-RT0" secondAttribute="bottom" constant="50" id="sFU-qQ-68G"/>
-                            <constraint firstItem="nsK-U2-RT0" firstAttribute="leading" secondItem="52I-oh-t9X" secondAttribute="leading" constant="20" id="xGf-kk-nrs"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="WI6-30-TQV"/>
-                    <connections>
-                        <outlet property="labelEnter" destination="laF-ho-EUY" id="y4v-sB-tcp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sTv-Gs-HPh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2045" y="-1151"/>
         </scene>
         <!--Dream-->
         <scene sceneID="ryi-HR-TId">
@@ -435,58 +385,12 @@
                         <outlet property="noun2" destination="M41-Ck-tsj" id="FyG-hN-vBU"/>
                         <outlet property="noun3" destination="MYL-RM-WFD" id="fSW-zS-O3k"/>
                         <outlet property="verb1" destination="hXx-jL-QOn" id="Z1u-Sw-Jjq"/>
-                        <segue destination="Fo7-ec-VX6" kind="show" id="Vzf-Mm-7dF"/>
+                        <segue destination="ihn-ca-y7Z" kind="show" identifier="displayStory" id="bvK-GB-cRi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiY-lg-Smo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="897.10144927536237" y="-464.0625"/>
-        </scene>
-        <!--Dream Story-->
-        <scene sceneID="Hy7-5h-wy9">
-            <objects>
-                <viewController title="Dream Story" id="Fo7-ec-VX6" customClass="Dream" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kak-c2-28t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8I-hC-wRC">
-                                <rect key="frame" x="20" y="108" width="374" height="574"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODV-1M-KgJ">
-                                <rect key="frame" x="20" y="762" width="374" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="DXu-oP-hSr"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="NEW STORY">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                </buttonConfiguration>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="NHg-QA-6Ml"/>
-                        <color key="backgroundColor" red="0.92158359290000003" green="0.56483000520000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NHg-QA-6Ml" firstAttribute="bottom" secondItem="ODV-1M-KgJ" secondAttribute="bottom" constant="50" id="1kh-vU-TUQ"/>
-                            <constraint firstItem="Y8I-hC-wRC" firstAttribute="top" secondItem="NHg-QA-6Ml" secondAttribute="top" constant="20" id="Haw-L7-JKN"/>
-                            <constraint firstItem="Y8I-hC-wRC" firstAttribute="leading" secondItem="NHg-QA-6Ml" secondAttribute="leading" constant="20" id="IS1-aT-IQs"/>
-                            <constraint firstItem="NHg-QA-6Ml" firstAttribute="trailing" secondItem="Y8I-hC-wRC" secondAttribute="trailing" constant="20" id="Lwc-n4-k5P"/>
-                            <constraint firstItem="ODV-1M-KgJ" firstAttribute="leading" secondItem="NHg-QA-6Ml" secondAttribute="leading" constant="20" id="NvQ-Up-y6w"/>
-                            <constraint firstItem="NHg-QA-6Ml" firstAttribute="trailing" secondItem="ODV-1M-KgJ" secondAttribute="trailing" constant="20" id="YUA-WM-5yc"/>
-                            <constraint firstItem="ODV-1M-KgJ" firstAttribute="top" secondItem="Y8I-hC-wRC" secondAttribute="bottom" constant="80" id="pjK-G9-W3G"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="DQj-qp-T39"/>
-                    <connections>
-                        <outlet property="labelEnter" destination="Y8I-hC-wRC" id="S5p-iR-jq4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rGD-K5-qdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2044.9275362318842" y="-464.0625"/>
         </scene>
         <!--Heros Quest-->
         <scene sceneID="jaD-r4-lhh">
@@ -676,66 +580,12 @@
                         <outlet property="noun2" destination="Mxg-Z9-VAw" id="5Ht-PM-JkH"/>
                         <outlet property="noun3" destination="ShN-QG-ilc" id="iCm-f5-lQ3"/>
                         <outlet property="verb1" destination="PIc-r7-Cwc" id="gmQ-Vm-ova"/>
-                        <segue destination="bBx-No-12I" kind="show" id="BqN-7j-2mO"/>
+                        <segue destination="ihn-ca-y7Z" kind="show" identifier="displayStory" id="KpW-Vc-FRh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xO-hr-7ir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="897.10144927536237" y="239.73214285714283"/>
-        </scene>
-        <!--Hero Story-->
-        <scene sceneID="6EW-TJ-QBh">
-            <objects>
-                <viewController title="Hero Story" id="bBx-No-12I" customClass="HerosQuest" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mmM-Nl-hRB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzC-xb-Nh8">
-                                <rect key="frame" x="20" y="108" width="374" height="574"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="mrO-lL-ur4">
-                                <rect key="frame" x="20" y="762" width="374" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AU8-o9-3cB">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="w6F-cs-9hs"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="NEW STORY">
-                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="yd8-YA-NAR"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Swo-4V-mAp"/>
-                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                        <constraints>
-                            <constraint firstItem="pzC-xb-Nh8" firstAttribute="leading" secondItem="Swo-4V-mAp" secondAttribute="leading" constant="20" id="JOS-lC-rOp"/>
-                            <constraint firstItem="mrO-lL-ur4" firstAttribute="top" secondItem="pzC-xb-Nh8" secondAttribute="bottom" constant="80" id="VKj-lU-RJQ"/>
-                            <constraint firstItem="pzC-xb-Nh8" firstAttribute="top" secondItem="mmM-Nl-hRB" secondAttribute="topMargin" constant="20" id="ZrZ-tl-d9V"/>
-                            <constraint firstItem="Swo-4V-mAp" firstAttribute="trailing" secondItem="mrO-lL-ur4" secondAttribute="trailing" constant="20" id="dmN-3e-9pI"/>
-                            <constraint firstItem="mrO-lL-ur4" firstAttribute="leading" secondItem="Swo-4V-mAp" secondAttribute="leading" constant="20" id="gbr-Pi-jWY"/>
-                            <constraint firstItem="Swo-4V-mAp" firstAttribute="trailing" secondItem="pzC-xb-Nh8" secondAttribute="trailing" constant="20" id="hKM-VY-afh"/>
-                            <constraint firstItem="Swo-4V-mAp" firstAttribute="bottom" secondItem="mrO-lL-ur4" secondAttribute="bottom" constant="50" id="rSf-4f-DnF"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="GML-5b-yS8"/>
-                    <connections>
-                        <outlet property="labelEnter" destination="pzC-xb-Nh8" id="Caz-jy-GRY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rjy-Fx-oz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2044.9275362318842" y="239.73214285714283"/>
         </scene>
         <!--Goosebumps View Controller-->
         <scene sceneID="ay5-J7-zW3">
@@ -851,54 +701,24 @@
                     </view>
                     <navigationItem key="navigationItem" id="31g-AI-BzA"/>
                     <connections>
-                        <segue destination="ZhZ-y3-TV5" kind="show" id="Y9C-qB-2bN"/>
+                        <outlet property="adj1" destination="tJM-Lm-9hY" id="hcy-0K-ZvH"/>
+                        <outlet property="adj2" destination="CAm-lE-hLE" id="TCq-R0-p35"/>
+                        <outlet property="adj3" destination="OX2-a9-JH4" id="aFw-Ej-9KD"/>
+                        <outlet property="name1" destination="PVt-Ms-dvQ" id="WzA-wI-x9m"/>
+                        <outlet property="name2" destination="wTw-7G-cgj" id="gVA-Sa-Rwm"/>
+                        <outlet property="noun1" destination="udN-T0-tpK" id="r78-Sf-GZp"/>
+                        <outlet property="place" destination="p0e-QN-Asn" id="f2f-wi-M9Y"/>
+                        <segue destination="ihn-ca-y7Z" kind="show" identifier="displayStory" id="XkA-dW-pkW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="146-mR-Jx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="895.6521739130435" y="947.54464285714278"/>
         </scene>
-        <!--Goosebumps Story-->
-        <scene sceneID="ad6-8e-JZp">
-            <objects>
-                <viewController title="Goosebumps Story" id="ZhZ-y3-TV5" customClass="GoosebumpsStoryViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7TV-6x-vug">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaM-en-snR">
-                                <rect key="frame" x="20" y="61" width="374" height="651"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-zl-opm">
-                                <rect key="frame" x="94" y="777" width="227" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="NEW STORY"/>
-                                <connections>
-                                    <action selector="newStoryButton:" destination="ZhZ-y3-TV5" eventType="touchUpInside" id="sLt-TZ-6cS"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Ano-v6-xeb"/>
-                        <color key="backgroundColor" red="0.64253013930000002" green="0.78039215689999997" blue="0.63702659080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ShK-sS-JeC"/>
-                    <connections>
-                        <outlet property="storyLabel" destination="JaM-en-snR" id="2d2-hH-epy"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SGq-Ig-Or0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2045" y="948"/>
-        </scene>
-        <!--0s Movie View Controller-->
+        <!--Eighties Movie View Controller-->
         <scene sceneID="9cU-nR-7cE">
             <objects>
-                <viewController id="f0e-Rd-I39" customClass="_0sMovieViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f0e-Rd-I39" customClass="EightiesMovieViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tb6-xJ-Nvb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -911,7 +731,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="ENTER"/>
                                 <connections>
-                                    <action selector="btnEnter:" destination="f0e-Rd-I39" eventType="touchUpInside" id="yeD-F4-dml"/>
+                                    <action selector="btnEnter:" destination="f0e-Rd-I39" eventType="touchUpInside" id="Xbj-c6-EOf"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6Qb-5S-jei">
@@ -1033,57 +853,31 @@
                     </view>
                     <navigationItem key="navigationItem" id="vXj-YT-2NK"/>
                     <connections>
-                        <segue destination="d8J-8d-ode" kind="show" id="fJz-ZW-Bgs"/>
+                        <outlet property="adjective" destination="PAd-tl-nfT" id="R7J-P0-Bdp"/>
+                        <outlet property="adverb1" destination="1rS-Vn-Vdl" id="J9q-Ju-IVQ"/>
+                        <outlet property="animal" destination="bDp-kR-oFd" id="xJc-UG-uX1"/>
+                        <outlet property="noun1" destination="rBM-V3-Ss3" id="Dzs-k1-Mhb"/>
+                        <outlet property="noun2" destination="mTy-bf-qBq" id="otC-He-r8S"/>
+                        <outlet property="place" destination="bAP-a9-mgG" id="oFx-3u-9Af"/>
+                        <outlet property="timeofday" destination="baU-p8-UNn" id="Se2-f1-2My"/>
+                        <outlet property="verb1" destination="mF6-eG-paM" id="dHH-lv-eQ4"/>
+                        <outlet property="verb2" destination="Q2c-OB-Vwm" id="587-cf-GXw"/>
+                        <segue destination="ihn-ca-y7Z" kind="show" identifier="displayStory" id="ngJ-BH-BhC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c57-NL-XAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895.6521739130435" y="1640.625"/>
+            <point key="canvasLocation" x="897" y="1641"/>
         </scene>
-        <!--80s Movie Story-->
-        <scene sceneID="hbN-ho-iYQ">
+        <!--DisplayStoryViewController-->
+        <scene sceneID="2CQ-Pz-Fqk">
             <objects>
-                <viewController title="80s Movie Story" id="d8J-8d-ode" customClass="EightiesStoryViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mwX-fL-HiW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nf-6P-STI">
-                                <rect key="frame" x="20" y="60" width="374" height="635"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFc-bR-0OO">
-                                <rect key="frame" x="85" y="777" width="244" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="WWG-4k-nen"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="NEW STORY"/>
-                                <connections>
-                                    <action selector="newStoryButton:" destination="d8J-8d-ode" eventType="touchUpInside" id="MGU-vb-VCv"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="8ml-P9-sYe"/>
-                        <color key="backgroundColor" red="0.8206391931" green="0.8206391931" blue="0.83822232480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="8ml-P9-sYe" firstAttribute="bottom" secondItem="bFc-bR-0OO" secondAttribute="bottom" constant="20" id="3E5-OS-BiC"/>
-                            <constraint firstItem="bFc-bR-0OO" firstAttribute="centerX" secondItem="0nf-6P-STI" secondAttribute="centerX" id="5QM-4h-yft"/>
-                            <constraint firstItem="bFc-bR-0OO" firstAttribute="leading" secondItem="8ml-P9-sYe" secondAttribute="leading" constant="85" id="afQ-5f-Yh7"/>
-                            <constraint firstItem="bFc-bR-0OO" firstAttribute="top" secondItem="0nf-6P-STI" secondAttribute="bottom" constant="82" id="oVy-EL-KHi"/>
-                            <constraint firstItem="bFc-bR-0OO" firstAttribute="centerX" secondItem="mwX-fL-HiW" secondAttribute="centerX" id="r8a-co-zgf"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="hOT-mL-thq"/>
-                    <connections>
-                        <outlet property="storyLabel" destination="0nf-6P-STI" id="brQ-Uz-2cb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="13V-QT-AZr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="DisplayStoryViewController" id="ihn-ca-y7Z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="j8c-Re-ZTS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xq4-gR-hhC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2045" y="1641"/>
+            <point key="canvasLocation" x="2471" y="240"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="grx-9f-obo">
@@ -1104,6 +898,9 @@
             <point key="canvasLocation" x="-1259.4202898550725" y="44.866071428571423"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ngJ-BH-BhC"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
