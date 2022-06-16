@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     @IBAction func randomPressed(_ sender: Any) {
-        let segues =  ["pushEighties"]
+        let segues =  ["pushEighties", "pushGoosebumps", "pushHero"]
         let randomSegue = segues.randomElement()!
         self.performSegue(withIdentifier: randomSegue, sender: self)
         print(randomSegue)

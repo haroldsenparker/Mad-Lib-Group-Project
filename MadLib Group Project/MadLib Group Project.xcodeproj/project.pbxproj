@@ -10,7 +10,6 @@
 		99039220282E9CB700CAC085 /* HauntedHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903921F282E9CB700CAC085 /* HauntedHouseViewController.swift */; };
 		FA0602D3285A35D10063868D /* DisplayStoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0602D2285A35D10063868D /* DisplayStoryViewController.storyboard */; };
 		FA0602D5285A35E70063868D /* DisplayStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0602D4285A35E70063868D /* DisplayStoryViewController.swift */; };
-		FABDA718284F9DFA00799CFB /* GoosebumpsStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDA717284F9DFA00799CFB /* GoosebumpsStoryViewController.swift */; };
 		FABDA71A284F9FA500799CFB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDA719284F9FA500799CFB /* MainViewController.swift */; };
 		FAC70E802821680500E44253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E7F2821680500E44253 /* AppDelegate.swift */; };
 		FAC70E822821680500E44253 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC70E812821680500E44253 /* SceneDelegate.swift */; };
@@ -27,7 +26,6 @@
 		9903921F282E9CB700CAC085 /* HauntedHouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HauntedHouseViewController.swift; sourceTree = "<group>"; };
 		FA0602D2285A35D10063868D /* DisplayStoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DisplayStoryViewController.storyboard; sourceTree = "<group>"; };
 		FA0602D4285A35E70063868D /* DisplayStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStoryViewController.swift; sourceTree = "<group>"; };
-		FABDA717284F9DFA00799CFB /* GoosebumpsStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoosebumpsStoryViewController.swift; sourceTree = "<group>"; };
 		FABDA719284F9FA500799CFB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAC70E7C2821680500E44253 /* MadLib Group Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MadLib Group Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC70E7F2821680500E44253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 			children = (
 				FAC70E93282178A200E44253 /* GoosebumpsViewController.swift */,
 				FAC70E96282178DF00E44253 /* 80sMovieViewController.swift */,
-				FABDA717284F9DFA00799CFB /* GoosebumpsStoryViewController.swift */,
 				FAC70E982821791B00E44253 /* Dream.swift */,
 				FABDA719284F9FA500799CFB /* MainViewController.swift */,
 				FAC70E9A2821792500E44253 /* HerosQuest.swift */,
@@ -171,7 +168,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABDA718284F9DFA00799CFB /* GoosebumpsStoryViewController.swift in Sources */,
 				FAC70E9B2821792500E44253 /* HerosQuest.swift in Sources */,
 				99039220282E9CB700CAC085 /* HauntedHouseViewController.swift in Sources */,
 				FAC70E94282178A200E44253 /* GoosebumpsViewController.swift in Sources */,

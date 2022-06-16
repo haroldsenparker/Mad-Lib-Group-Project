@@ -411,7 +411,7 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="enterButtonTapped:" destination="BNP-MN-wb4" eventType="touchUpInside" id="hmS-PF-k7b"/>
+                                    <action selector="enterButtonPushed:" destination="BNP-MN-wb4" eventType="touchUpInside" id="M9e-YK-qzK"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fXn-iO-7cy">
@@ -450,24 +450,24 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjetive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-Ug-1Z0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjective1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-Ug-1Z0" userLabel="Adjective">
                                         <rect key="frame" x="0.0" y="212.5" width="334" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G29-Wr-NZX">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G29-Wr-NZX" userLabel="Adjective1">
                                         <rect key="frame" x="0.0" y="247.5" width="334" height="32.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjetive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw9-lu-qzq">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjective2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw9-lu-qzq">
                                         <rect key="frame" x="0.0" y="283" width="334" height="32.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20B-3B-LAf">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20B-3B-LAf" userLabel="Adjective2">
                                         <rect key="frame" x="0.0" y="318.5" width="334" height="32.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -494,13 +494,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjetive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dES-AX-2cg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjective3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dES-AX-2cg">
                                         <rect key="frame" x="0.0" y="495.5" width="334" height="32.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rg8-iI-q1H">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rg8-iI-q1H" userLabel="Adjective3">
                                         <rect key="frame" x="0.0" y="531" width="334" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -571,15 +571,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="6Xj-Av-rjL"/>
                     <connections>
-                        <outlet property="adjetive1" destination="G29-Wr-NZX" id="szd-7y-P9h"/>
-                        <outlet property="adjetive2" destination="20B-3B-LAf" id="43A-Mn-iKj"/>
-                        <outlet property="adjetive3" destination="Rg8-iI-q1H" id="e2m-pt-ceC"/>
-                        <outlet property="name1" destination="Bgf-K8-Lvk" id="e85-Rv-mNB"/>
-                        <outlet property="name2" destination="eUJ-EV-xnR" id="vcB-rh-v3d"/>
-                        <outlet property="noun1" destination="YoY-NT-2NO" id="S8w-w6-JzA"/>
-                        <outlet property="noun2" destination="Mxg-Z9-VAw" id="5Ht-PM-JkH"/>
-                        <outlet property="noun3" destination="ShN-QG-ilc" id="iCm-f5-lQ3"/>
-                        <outlet property="verb1" destination="PIc-r7-Cwc" id="gmQ-Vm-ova"/>
+                        <outlet property="adjective1" destination="G29-Wr-NZX" id="4O7-Hi-iWu"/>
+                        <outlet property="adjective2" destination="20B-3B-LAf" id="ZRI-ir-GFP"/>
+                        <outlet property="adjective3" destination="Rg8-iI-q1H" id="DCr-XO-fNy"/>
+                        <outlet property="name1" destination="Bgf-K8-Lvk" id="Ev3-KH-YtW"/>
+                        <outlet property="name2" destination="eUJ-EV-xnR" id="Irg-bW-aYi"/>
+                        <outlet property="noun1" destination="YoY-NT-2NO" id="8wC-ny-d9B"/>
+                        <outlet property="noun2" destination="Mxg-Z9-VAw" id="HAf-GD-TJg"/>
+                        <outlet property="noun3" destination="ShN-QG-ilc" id="caO-nJ-rQD"/>
+                        <outlet property="verb1" destination="PIc-r7-Cwc" id="eQO-7g-naU"/>
                         <segue destination="ihn-ca-y7Z" kind="show" identifier="displayStory" id="KpW-Vc-FRh"/>
                     </connections>
                 </viewController>
@@ -899,7 +899,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ngJ-BH-BhC"/>
+        <segue reference="KpW-Vc-FRh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
