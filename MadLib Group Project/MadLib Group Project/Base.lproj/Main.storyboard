@@ -16,28 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-6b-t8z">
-                                <rect key="frame" x="136" y="371" width="144" height="86"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="RANDOM" titleAlignment="center"/>
-                                <connections>
-                                    <action selector="randomPressed:" destination="dc2-00-QPJ" eventType="touchUpInside" id="YJB-zi-d21"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL8-we-AUy">
-                                <rect key="frame" x="135.5" y="535" width="143" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="j8b-jA-4dr"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="CUSTOM MAD LIB" titleAlignment="center"/>
-                                <connections>
-                                    <segue destination="4fY-M9-xkf" kind="show" identifier="showRandom" id="KOx-Jq-hlW"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MAD LIBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCX-oi-ayC">
-                                <rect key="frame" x="85" y="217" width="245" height="64"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ZlY-QA-GLG">
+                                <rect key="frame" x="40" y="508" width="334" height="112"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-6b-t8z">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Qbz-1S-VMf"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="RANDOM" titleAlignment="center"/>
+                                        <connections>
+                                            <action selector="randomPressed:" destination="dc2-00-QPJ" eventType="touchUpInside" id="YJB-zi-d21"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL8-we-AUy">
+                                        <rect key="frame" x="0.0" y="81" width="334" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="CUSTOM MAD LIB" titleAlignment="center"/>
+                                        <connections>
+                                            <segue destination="4fY-M9-xkf" kind="show" identifier="showRandom" id="KOx-Jq-hlW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" text="MAD LIBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCX-oi-ayC">
+                                <rect key="frame" x="20" y="108" width="374" height="300"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="NVo-u1-W5G"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="53"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,15 +54,13 @@
                         <viewLayoutGuide key="safeArea" id="TXY-hf-fMf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SCX-oi-ayC" firstAttribute="centerX" secondItem="kFt-IW-FM4" secondAttribute="centerX" id="BCa-CO-2hi"/>
-                            <constraint firstItem="SCX-oi-ayC" firstAttribute="leading" secondItem="TXY-hf-fMf" secondAttribute="leading" constant="85" id="JRa-cj-Htc"/>
-                            <constraint firstItem="xL8-we-AUy" firstAttribute="top" secondItem="x8e-6b-t8z" secondAttribute="bottom" constant="78" id="QdJ-UX-rOL"/>
-                            <constraint firstItem="SCX-oi-ayC" firstAttribute="centerX" secondItem="xL8-we-AUy" secondAttribute="centerX" id="bkU-eK-46M"/>
-                            <constraint firstItem="x8e-6b-t8z" firstAttribute="leading" secondItem="TXY-hf-fMf" secondAttribute="leading" constant="136" id="qea-Hi-6ST"/>
-                            <constraint firstItem="x8e-6b-t8z" firstAttribute="top" secondItem="SCX-oi-ayC" secondAttribute="bottom" constant="90" id="sGq-jc-Ia6"/>
-                            <constraint firstItem="SCX-oi-ayC" firstAttribute="centerX" secondItem="x8e-6b-t8z" secondAttribute="centerX" id="sXG-cy-GHS"/>
-                            <constraint firstItem="TXY-hf-fMf" firstAttribute="bottom" secondItem="xL8-we-AUy" secondAttribute="bottom" constant="243" id="sjf-sM-jW2"/>
-                            <constraint firstItem="SCX-oi-ayC" firstAttribute="top" secondItem="TXY-hf-fMf" secondAttribute="top" constant="173" id="wkL-0O-rG3"/>
+                            <constraint firstItem="ZlY-QA-GLG" firstAttribute="top" secondItem="SCX-oi-ayC" secondAttribute="bottom" constant="100" id="6ge-aG-TKc"/>
+                            <constraint firstItem="SCX-oi-ayC" firstAttribute="top" secondItem="TXY-hf-fMf" secondAttribute="top" constant="20" id="BUc-gF-RMl"/>
+                            <constraint firstItem="TXY-hf-fMf" firstAttribute="trailing" secondItem="ZlY-QA-GLG" secondAttribute="trailing" constant="40" id="DOL-8V-l9W"/>
+                            <constraint firstItem="TXY-hf-fMf" firstAttribute="bottom" secondItem="ZlY-QA-GLG" secondAttribute="bottom" constant="50" id="c1u-mU-Say"/>
+                            <constraint firstItem="SCX-oi-ayC" firstAttribute="leading" secondItem="TXY-hf-fMf" secondAttribute="leading" constant="20" id="ehj-Bn-S7e"/>
+                            <constraint firstItem="TXY-hf-fMf" firstAttribute="trailing" secondItem="SCX-oi-ayC" secondAttribute="trailing" constant="20" id="rzM-hE-Cxm"/>
+                            <constraint firstItem="ZlY-QA-GLG" firstAttribute="leading" secondItem="TXY-hf-fMf" secondAttribute="leading" constant="40" id="u96-xy-Ui6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="32I-nt-kV6"/>
@@ -918,7 +924,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XkA-dW-pkW"/>
+        <segue reference="bvK-GB-cRi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
