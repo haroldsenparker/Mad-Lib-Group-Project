@@ -32,7 +32,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="CUSTOM MAD LIB" titleAlignment="center"/>
                                 <connections>
-                                    <segue destination="CWr-k6-gZk" kind="show" id="Q18-2c-Ah4"/>
+                                    <segue destination="4fY-M9-xkf" kind="show" identifier="showRandom" id="KOx-Jq-hlW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MAD LIBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCX-oi-ayC">
@@ -70,15 +70,34 @@
             </objects>
             <point key="canvasLocation" x="-349.27536231884062" y="44.866071428571423"/>
         </scene>
-        <!--Custom Mad Lib-->
-        <scene sceneID="moW-FJ-JZP">
+        <!--Custom MadLib-->
+        <scene sceneID="0tp-l8-fz2">
             <objects>
-                <viewController id="CWr-k6-gZk" userLabel="Custom Mad Lib" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="zOa-Du-cdB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YBh-RU-cVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController title="Custom MadLib" id="4fY-M9-xkf" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="46T-T2-hLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Vfg-Oe-00T">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vfg-Oe-00T" id="Xmm-m9-EOC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4fY-M9-xkf" id="1DH-s0-Enw"/>
+                            <outlet property="delegate" destination="4fY-M9-xkf" id="WDk-Qx-wrS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6UV-tX-3AK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFg-Ez-Rag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1972" y="774"/>
+            <point key="canvasLocation" x="-1899" y="773"/>
         </scene>
         <!--Haunted House-->
         <scene sceneID="f9b-F9-ROS">
@@ -899,7 +918,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KpW-Vc-FRh"/>
+        <segue reference="XkA-dW-pkW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
