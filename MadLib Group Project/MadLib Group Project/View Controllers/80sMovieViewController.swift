@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EightiesMovieViewController: UIViewController {
+class EightiesMovieViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var animal: UITextField!
     @IBOutlet var timeofday: UITextField!
     @IBOutlet var adjective: UITextField!
@@ -17,7 +17,33 @@ class EightiesMovieViewController: UIViewController {
     @IBOutlet var adverb1: UITextField!
     @IBOutlet var place: UITextField!
     @IBOutlet var noun2: UITextField!
+    @IBOutlet var scrollView: UIScrollView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        observeKeyboard()
+    }
+    
+    func observeKeyboard() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification:NSNotification){
+        //give room at the bottom of the scroll view, so it doesn't cover up anything the user needs to tap
+        var userInfo = notification.userInfo!
+        var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
+
+        var contentInset:UIEdgeInsets = self.scrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height
+        scrollView.contentInset = contentInset
+    }
+
+    @objc func keyboardWillHide(notification:NSNotification){
+        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+        scrollView.contentInset = contentInset
+    }
     
     @IBAction func btnEnter(_ sender: Any) {
         guard !animal.text!.isEmpty else {
@@ -46,6 +72,10 @@ class EightiesMovieViewController: UIViewController {
     
     func story3() -> String? {
         "Gizmo the Mogwai was just going about his day in the \(timeofday.text!), when suddenly an \(animal.text!) appeared across his path. It was unlike anything he has seen before! It has somehow been corrupted by his archenemy, Stripe. According to its now \(adjective.text!) eyes and a stripe running down the front of its head like a tattoo, it seems like that is the case. It suddenly \(verb1.text!) towards Gizmo and \(verb2.text!) him in the face. Since, Stripe attacked the Clamp Center, he trained, and gained proficiency in \(noun1.text!). So, he put this sad, little creature out to the pasture."
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }
 
