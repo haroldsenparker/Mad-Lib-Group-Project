@@ -45,6 +45,10 @@ class EightiesMovieViewController: UIViewController, UITextFieldDelegate {
         scrollView.contentInset = contentInset
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+
     @IBAction func btnEnter(_ sender: Any) {
         guard !animal.text!.isEmpty else {
             print("Hey one of these is empty")
@@ -74,8 +78,5 @@ class EightiesMovieViewController: UIViewController, UITextFieldDelegate {
         "Gizmo the Mogwai was just going about his day in the \(timeofday.text!), when suddenly an \(animal.text!) appeared across his path. It was unlike anything he has seen before! It has somehow been corrupted by his archenemy, Stripe. According to its now \(adjective.text!) eyes and a stripe running down the front of its head like a tattoo, it seems like that is the case. It suddenly \(verb1.text!) towards Gizmo and \(verb2.text!) him in the face. Since, Stripe attacked the Clamp Center, he trained, and gained proficiency in \(noun1.text!). So, he put this sad, little creature out to the pasture."
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-    }
 }
 
