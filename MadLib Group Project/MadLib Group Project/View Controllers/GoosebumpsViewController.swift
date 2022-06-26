@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GoosebumpsViewController: UIViewController {
+class GoosebumpsViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var name1: UITextField!
     @IBOutlet var name2: UITextField!

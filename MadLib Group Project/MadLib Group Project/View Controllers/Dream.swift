@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Dream: UIViewController {
+class Dream: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var adjetive1: UITextField!
     @IBOutlet weak var noun1: UITextField!

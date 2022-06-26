@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HerosQuest: UIViewController {
+class HerosQuest: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var name1: UITextField!
     @IBOutlet weak var noun1: UITextField!

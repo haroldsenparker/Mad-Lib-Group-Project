@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HauntedHouseViewController: UIViewController {
+class HauntedHouseViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var adjective1: UITextField!
     @IBOutlet weak var name1: UITextField!
