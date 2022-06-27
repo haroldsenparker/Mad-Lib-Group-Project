@@ -30,7 +30,7 @@
                                             <constraint firstAttribute="height" constant="50" id="Dva-il-6h6"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="NEW STORY">
+                                        <buttonConfiguration key="configuration" style="filled" title="HOME">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                         </buttonConfiguration>
                                         <connections>
