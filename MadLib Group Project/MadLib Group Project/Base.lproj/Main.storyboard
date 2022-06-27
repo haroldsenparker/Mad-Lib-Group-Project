@@ -11,7 +11,7 @@
         <!--Main Scene-->
         <scene sceneID="Dz1-pl-Mii">
             <objects>
-                <viewController id="dc2-00-QPJ" userLabel="Main Scene" customClass="MainViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainView" id="dc2-00-QPJ" userLabel="Main Scene" customClass="MainViewController" customModule="MadLib_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kFt-IW-FM4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

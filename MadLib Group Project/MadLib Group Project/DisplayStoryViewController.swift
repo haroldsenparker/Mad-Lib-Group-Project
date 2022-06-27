@@ -25,6 +25,6 @@ class DisplayStoryViewController: UIViewController {
     }
 
     @IBAction func newStoryButtonPressed(_ sender: Any) {
-        storyLabel.text = madlib?.stories.randomElement()
+        
     }
 }
